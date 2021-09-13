@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://www.qtyuncloud.tk/theme/malio/assets/img/unsplash/login-bg.jpg);
+}
+
+.fontStyle {
+    font-family: 'Montserrat';
+}
+
+.head {
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg,#155799,#159957);
+}
+
+.main-content {
+    width: 1200px;
+    height: 600px;
+    margin: 20px auto;
+    padding: 0px 20px;
+}
