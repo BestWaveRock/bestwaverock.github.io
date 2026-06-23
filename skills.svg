@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 200" width="100%" height="200" style="background: #090b10; border-radius: 12px; font-family: 'Orbitron', sans-serif;">
+  <defs>
+    <!-- Import Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&amp;family=Share+Tech+Mono&amp;display=swap');
+
+      /* Styles */
+      .section-title {
+        font-size: 14px;
+        fill: #a5b4fc;
+        font-weight: 800;
+        letter-spacing: 2px;
+        filter: drop-shadow(0 0 4px rgba(165, 180, 252, 0.4));
+      }
+
+      .skill-label {
+        font-size: 12px;
+        fill: #94A3B8;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .skill-percent {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 12px;
+        fill: #06B6D4;
+        font-weight: 600;
+      }
+
+      /* Glow Filters */
+      .glow-border {
+        stroke: #06B6D4;
+        stroke-width: 1.5;
+        filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.4));
+      }
+
+      .fill-vue { fill: url(#vue-grad); filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.5)); }
+      .fill-react { fill: url(#react-grad); filter: drop-shadow(0 0 4px rgba(6, 182, 212, 0.5)); }
+      .fill-tvos { fill: url(#tvos-grad); filter: drop-shadow(0 0 4px rgba(139, 92, 246, 0.5)); }
+      .fill-cpp { fill: url(#cpp-grad); filter: drop-shadow(0 0 4px rgba(236, 72, 153, 0.5)); }
+      .fill-python { fill: url(#python-grad); filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.5)); }
+
+      /* Animations */
+      @keyframes fillVue { from { width: 0; } to { width: 520px; } }
+      @keyframes fillReact { from { width: 0; } to { width: 480px; } }
+      @keyframes filltvOS { from { width: 0; } to { width: 430px; } }
+      @keyframes fillCpp { from { width: 0; } to { width: 400px; } }
+      @keyframes fillPython { from { width: 0; } to { width: 380px; } }
+
+      .bar-vue { animation: fillVue 2.2s cubic-bezier(0.1, 0.8, 0.2, 1) forwards; }
+      .bar-react { animation: fillReact 2.2s cubic-bezier(0.1, 0.8, 0.2, 1) forwards; }
+      .bar-tvos { animation: filltvOS 2.2s cubic-bezier(0.1, 0.8, 0.2, 1) forwards; }
+      .bar-cpp { animation: fillCpp 2.2s cubic-bezier(0.1, 0.8, 0.2, 1) forwards; }
+      .bar-python { animation: fillPython 2.2s cubic-bezier(0.1, 0.8, 0.2, 1) forwards; }
+
+      /* Text Fade In */
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      .fade-in { animation: fadeIn 1s ease-out 1.8s both; }
+
+      /* Active Shimmer */
+      @keyframes shimmer {
+        0% { opacity: 0.7; }
+        50% { opacity: 1; }
+        100% { opacity: 0.7; }
+      }
+      .shimmer {
+        animation: shimmer 2s infinite ease-in-out;
+      }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="vue-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="react-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="tvos-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="cpp-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="python-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="25" y="15" width="780" height="170" rx="10" fill="none" class="glow-border" />
+  <rect x="26" y="16" width="778" height="168" rx="9" fill="#0A0D16" fill-opacity="0.85" />
+
+  <!-- Section Title -->
+  <g transform="translate(50, 42)">
+    <text x="0" y="0" class="section-title">SKILLS_MATRIX // STACK_INTEGRITY</text>
+  </g>
+
+  <!-- Skill Matrix Rows -->
+  <g transform="translate(50, 65)">
+    <!-- Row 1: Vue -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="12" class="skill-label">VUE / NUXT</text>
+      <!-- Progress Bar Container -->
+      <rect x="160" y="2" width="530" height="10" rx="5" fill="#1E293B" />
+      <!-- Progress Bar Fill -->
+      <rect x="160" y="2" height="10" rx="5" class="fill-vue bar-vue" />
+      <!-- Percentage -->
+      <text x="705" y="12" class="skill-percent fade-in">90%</text>
+    </g>
+
+    <!-- Row 2: React -->
+    <g transform="translate(0, 22)">
+      <text x="0" y="12" class="skill-label">REACT / TS</text>
+      <rect x="160" y="2" width="530" height="10" rx="5" fill="#1E293B" />
+      <rect x="160" y="2" height="10" rx="5" class="fill-react bar-react" />
+      <text x="705" y="12" class="skill-percent fade-in">85%</text>
+    </g>
+
+    <!-- Row 3: Swift/tvOS -->
+    <g transform="translate(0, 44)">
+      <text x="0" y="12" class="skill-label">SWIFT / tvOS</text>
+      <rect x="160" y="2" width="530" height="10" rx="5" fill="#1E293B" />
+      <rect x="160" y="2" height="10" rx="5" class="fill-tvos bar-tvos" />
+      <text x="705" y="12" class="skill-percent fade-in">75%</text>
+    </g>
+
+    <!-- Row 4: C++ -->
+    <g transform="translate(0, 66)">
+      <text x="0" y="12" class="skill-label">C++ / QT</text>
+      <rect x="160" y="2" width="530" height="10" rx="5" fill="#1E293B" />
+      <rect x="160" y="2" height="10" rx="5" class="fill-cpp bar-cpp" />
+      <text x="705" y="12" class="skill-percent fade-in">70%</text>
+    </g>
+
+    <!-- Row 5: Python -->
+    <g transform="translate(0, 88)">
+      <text x="0" y="12" class="skill-label">PYTHON / AI</text>
+      <rect x="160" y="2" width="530" height="10" rx="5" fill="#1E293B" />
+      <rect x="160" y="2" height="10" rx="5" class="fill-python bar-python" />
+      <text x="705" y="12" class="skill-percent fade-in">65%</text>
+    </g>
+  </g>
+</svg>

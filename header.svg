@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 300" width="100%" height="300" style="background: #090b10; border-radius: 12px; font-family: 'Fira Code', monospace;">
+  <defs>
+    <!-- Import Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;family=Orbitron:wght@700;900&amp;display=swap');
+
+      /* General Styles */
+      .title {
+        font-family: 'Orbitron', sans-serif;
+        fill: #06B6D4;
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.6));
+      }
+
+      .subtitle {
+        font-family: 'Orbitron', sans-serif;
+        fill: #a5b4fc;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .terminal-text {
+        font-size: 14px;
+        fill: #10B981;
+      }
+
+      .terminal-comment {
+        font-size: 13px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .terminal-keyword {
+        fill: #EC4899;
+        font-weight: bold;
+      }
+
+      .terminal-val {
+        fill: #F59E0B;
+      }
+
+      /* Glow Filter */
+      .glow-border {
+        stroke: #8B5CF6;
+        stroke-width: 2;
+        filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.5));
+      }
+
+      /* Grid Pulse */
+      .grid {
+        stroke: #1E293B;
+        stroke-width: 0.8;
+        animation: gridPulse 6s ease-in-out infinite;
+      }
+      @keyframes gridPulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.6; }
+      }
+
+      /* Scanline Effect */
+      .scanline {
+        fill: none;
+        stroke: rgba(6, 182, 212, 0.08);
+        stroke-width: 4;
+        animation: scan 4s linear infinite;
+      }
+      @keyframes scan {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(300px); }
+      }
+
+      /* Floating Particles */
+      .particle {
+        fill: #06B6D4;
+        opacity: 0.4;
+        filter: blur(2px);
+      }
+      .p1 { animation: floatY1 8s ease-in-out infinite; }
+      .p2 { animation: floatY2 10s ease-in-out infinite; fill: #8B5CF6; }
+      .p3 { animation: floatY3 12s ease-in-out infinite; fill: #EC4899; }
+
+      @keyframes floatY1 {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(30px, -40px); opacity: 0.8; }
+      }
+      @keyframes floatY2 {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(-40px, -20px); opacity: 0.7; }
+      }
+      @keyframes floatY3 {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(20px, 30px); opacity: 0.6; }
+      }
+
+      /* Typing Effects */
+      .line-1 { animation: print 0.8s ease-out forwards; opacity: 0; }
+      .line-2 { animation: print 0.8s ease-out 1.2s forwards; opacity: 0; }
+      .line-3 { animation: print 0.8s ease-out 2.4s forwards; opacity: 0; }
+      .line-4 { animation: print 0.8s ease-out 3.6s forwards; opacity: 0; }
+      .line-5 { animation: print 0.8s ease-out 4.8s forwards; opacity: 0; }
+
+      @keyframes print {
+        0% { opacity: 0; transform: translateX(-5px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+
+      /* Cursor Blink */
+      .cursor {
+        fill: #10B981;
+        animation: cursorBlink 0.8s steps(2) infinite;
+      }
+      @keyframes cursorBlink {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+
+      /* Logo Pulse */
+      .logo-pulse {
+        animation: logoGlow 4s ease-in-out infinite alternate;
+      }
+      @keyframes logoGlow {
+        0% { filter: drop-shadow(0 0 2px rgba(6, 182, 212, 0.4)); }
+        100% { filter: drop-shadow(0 0 12px rgba(6, 182, 212, 0.8)); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Gradients and Grid -->
+  <rect width="100%" height="100%" fill="#090b10" />
+  
+  <!-- Interactive Grid Lines -->
+  <g class="grid">
+    <!-- Horizontal lines -->
+    <line x1="0" y1="30" x2="830" y2="30" />
+    <line x1="0" y1="60" x2="830" y2="60" />
+    <line x1="0" y1="90" x2="830" y2="90" />
+    <line x1="0" y1="120" x2="830" y2="120" />
+    <line x1="0" y1="150" x2="830" y2="150" />
+    <line x1="0" y1="180" x2="830" y2="180" />
+    <line x1="0" y1="210" x2="830" y2="210" />
+    <line x1="0" y1="240" x2="830" y2="240" />
+    <line x1="0" y1="270" x2="830" y2="270" />
+    <!-- Vertical lines -->
+    <line x1="50" y1="0" x2="50" y2="300" />
+    <line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="250" y1="0" x2="250" y2="300" />
+    <line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="350" y1="0" x2="350" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="450" y1="0" x2="450" y2="300" />
+    <line x1="500" y1="0" x2="500" y2="300" />
+    <line x1="550" y1="0" x2="550" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="650" y1="0" x2="650" y2="300" />
+    <line x1="700" y1="0" x2="700" y2="300" />
+    <line x1="750" y1="0" x2="750" y2="300" />
+    <line x1="800" y1="0" x2="800" y2="300" />
+  </g>
+
+  <!-- Ambient Floating Particles -->
+  <circle cx="120" cy="180" r="4" class="particle p1" />
+  <circle cx="680" cy="90" r="6" class="particle p2" />
+  <circle cx="750" cy="220" r="3" class="particle p3" />
+  <circle cx="280" cy="260" r="5" class="particle p1" />
+  <circle cx="50" cy="80" r="4" class="particle p2" />
+
+  <!-- Scanning Line -->
+  <line x1="0" y1="0" x2="830" y2="0" class="scanline" />
+
+  <!-- Main Glowing Container -->
+  <rect x="25" y="25" width="780" height="250" rx="10" fill="none" class="glow-border" />
+  <rect x="26" y="26" width="778" height="248" rx="9" fill="#0A0D16" fill-opacity="0.85" />
+
+  <!-- Header Headerbar -->
+  <path d="M 26 56 L 804 56" stroke="#1E293B" stroke-width="1" />
+  <!-- Window Controls -->
+  <circle cx="45" cy="41" r="5" fill="#EF4444" />
+  <circle cx="60" cy="41" r="5" fill="#F59E0B" />
+  <circle cx="75" cy="41" r="5" fill="#10B981" />
+  
+  <!-- System Title -->
+  <text x="390" y="45" text-anchor="middle" class="subtitle">SYSTEM_CONSOLE // BestWaveRock</text>
+
+  <!-- Animated Cyberpunk Logo Graphic -->
+  <g transform="translate(680, 150)" class="logo-pulse">
+    <!-- Rotating polygon / Sci-Fi symbol -->
+    <polygon points="0,-45 39,-22 39,22 0,45 -39,22 -39,-22" fill="none" stroke="#06B6D4" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="#8B5CF6" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="10s" repeatCount="indefinite"/>
+    </polygon>
+    <!-- Center glowing core -->
+    <circle cx="0" cy="0" r="8" fill="#EC4899" opacity="0.8" />
+  </g>
+
+  <!-- Terminal Typing Code Segment -->
+  <g transform="translate(50, 95)">
+    <!-- Line 1 -->
+    <g class="line-1">
+      <text x="0" y="0" class="terminal-comment">// Active developer profile initialized</text>
+    </g>
+    
+    <!-- Line 2 -->
+    <g class="line-2">
+      <text x="0" y="25" class="terminal-text">
+        <tspan class="terminal-keyword">const</tspan> dev = { name: <tspan class="terminal-val">'BestWaveRock'</tspan>, status: <tspan class="terminal-val">'active'</tspan> };
+      </text>
+    </g>
+
+    <!-- Line 3 -->
+    <g class="line-3">
+      <text x="0" y="50" class="terminal-text">
+        <tspan class="terminal-keyword">const</tspan> fields = [<tspan class="terminal-val">'Frontend'</tspan>, <tspan class="terminal-val">'tvOS/AppleTV'</tspan>, <tspan class="terminal-val">'DesktopTools'</tspan>];
+      </text>
+    </g>
+
+    <!-- Line 4 -->
+    <g class="line-4">
+      <text x="0" y="75" class="terminal-text">
+        <tspan class="terminal-keyword">let</tspan> coreTech = [<tspan class="terminal-val">'Vue'</tspan>, <tspan class="terminal-val">'React'</tspan>, <tspan class="terminal-val">'C++'</tspan>, <tspan class="terminal-val">'Swift'</tspan>, <tspan class="terminal-val">'Python'</tspan>];
+      </text>
+    </g>
+
+    <!-- Line 5 -->
+    <g class="line-5">
+      <text x="0" y="105" class="terminal-text">
+        &gt; <tspan fill="#06B6D4">BestWaveRock.init()</tspan> --loading successful <tspan fill="#8B5CF6">✓</tspan>
+      </text>
+      <!-- Blinking Cursor -->
+      <rect x="365" y="93" width="8" height="15" class="cursor" />
+    </g>
+  </g>
+
+  <!-- Footer Stats Info -->
+  <g transform="translate(50, 245)">
+    <text x="0" y="0" font-family="'Orbitron', sans-serif" font-size="10" fill="#64748B" letter-spacing="1">LOC: 0x2A19 // CODESpace Connect // VER 2.1</text>
+  </g>
+</svg>

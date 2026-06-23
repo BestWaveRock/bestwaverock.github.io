@@ -1,16 +1,14 @@
 # Hi there, I'm BestWaveRock 👋 <a name="top"></a>
 
 <p align="center">
-  <a href="https://github.com/BestWaveRock">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=25D366&center=true&vCenter=true&width=500&lines=Software+Engineer;Apple+TV+%2F+tvOS+Developer;Vue+%26+React+Developer;Building+Premium+Experiences" alt="Typing SVG" />
-  </a>
+  <img src="./header.svg" width="100%" alt="BestWaveRock's Profile Header" />
 </p>
 
 <p align="center">
   <a href="https://github.com/BestWaveRock">
-    <img src="https://img.shields.io/github/followers/BestWaveRock?label=Followers&style=flat-square&color=25D366" alt="Followers" />
-    <img src="https://img.shields.io/github/stars/BestWaveRock?label=Stars&style=flat-square&color=FFD700" alt="Stars" />
-    <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status" />
+    <img src="https://img.shields.io/github/followers/BestWaveRock?label=Followers&style=flat-square&color=06B6D4" alt="Followers" />
+    <img src="https://img.shields.io/github/stars/BestWaveRock?label=Stars&style=flat-square&color=EC4899" alt="Stars" />
+    <img src="https://img.shields.io/badge/System-Active-10B981?style=flat-square" alt="Status" />
   </p>
 </p>
 
@@ -29,38 +27,9 @@ I am a Software Engineer passionate about creating polished, high-performance de
 
 ### 🛠️ Tech Stack & Skills
 
-<table align="center">
-  <tr>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" width="48" height="48" alt="Vue" />
-      <br />Vue / Nuxt
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="48" height="48" alt="React" />
-      <br />React
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
-      <br />TypeScript
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg" width="48" height="48" alt="tvOS" />
-      <br />tvOS / iOS
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="48" height="48" alt="C++" />
-      <br />C++
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python" />
-      <br />Python
-    </td>
-    <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="NodeJS" />
-      <br />Node.js
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./skills.svg" width="100%" alt="BestWaveRock's Technical Matrix" />
+</p>
 
 ---
 
